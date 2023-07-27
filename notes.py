@@ -1,3 +1,6 @@
+#"\n" = new line
+#tuplas-> usadas para quando nao se quer alterar o valor
+
 #raiz quadra
 import math
 
@@ -102,6 +105,48 @@ def main(): #Estudar mais sobre como funciona e para que serve
     numero_dobrado = dobra(4)
     print(f"o numero dobrado é {numero_dobrado}")
     
-def dobra(x=1)
+def dobra(x=1):
     return x*2
 main()
+
+
+#Para passar valores que nao foram especificos
+def test(*args):
+    print(args)
+
+
+test(1, 2, 3, 4, "Rodrigo")
+
+#Para passar valores que nao foram especificos
+def test(*args):
+    for i in args:
+        print(i)
+
+
+test(1, 2, 3, 4, "Rodrigo", 5)
+
+
+#Para desempacotar os valores da lista
+lista = [1, 2, 3, 4, 5]
+n1, n2, *n= lista
+print(*lista )
+
+
+#como trasformas a tupla com valor args em lista
+def test(*args):
+    print(args)
+    args = lista(args)
+    args[0] = 99
+
+print("")
+
+#*args= argumentos ////// **kwargs= keywordarguments or idade.kwargs.get("idade")
+def test(*args, **kwargs):
+    print(args)
+    print(kwargs["nome"], kwargs["idade"]) #-> aceita varios argumentos adicionados a chave.
+
+
+
+lista = [1, 2, 3, 4, 5]
+lista2 = [10, 20, 30, 40, 50]
+test(*lista, *lista2, nome= "Rodrigo", idade= 21)
