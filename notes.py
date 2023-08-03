@@ -150,3 +150,6 @@ def test(*args, **kwargs):
 lista = [1, 2, 3, 4, 5]
 lista2 = [10, 20, 30, 40, 50]
 test(*lista, *lista2, nome= "Rodrigo", idade= 21)
+
+
+#metodos sao funçoes dentro de classes
