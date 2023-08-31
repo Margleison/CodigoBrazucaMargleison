@@ -156,4 +156,4 @@ test(*lista, *lista2, nome= "Rodrigo", idade= 21)
 
 
 
-#
+# _ é como "nao toque nesta variavel"
