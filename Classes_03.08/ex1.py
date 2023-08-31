@@ -1,4 +1,4 @@
-class Dogloco:
+class Cachorro:
     def __init__(self, dog_name, dog_age):
         self.name = dog_name
         self.age = dog_age
@@ -10,11 +10,10 @@ def main():
     print(f"O {pit_2.name} tem {pit_2.age}")
 
 def get_dog():
-    dog_name = input("Qual o nome do seu cachorro:  ")
-    dog_age = int(input("Qual a idade do seu cachorro"))
-    return Dogloco(dog_name, dog_age)
+    dog_name = input("Qual o nome do seu cachorro: ")
+    dog_age = int(input("Qual a idade do seu cachorro: "))
+    return Cachorro(dog_name, dog_age)
 
 
 if __name__=="__main__":
     main()
-

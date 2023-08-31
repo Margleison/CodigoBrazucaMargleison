@@ -153,3 +153,7 @@ test(*lista, *lista2, nome= "Rodrigo", idade= 21)
 
 
 #metodos sao funçoes dentro de classes
+
+
+
+#

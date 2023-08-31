@@ -1,7 +1,15 @@
-name = input("Whats your name: ")
+import requests
+import sys
+import json
 
-if not name == "Rodrigo":
-    print("Nice to meet you")
+if len(sys.argv) != 2:
+    sys.exit
 
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=5&term="+sys.argv[1])
 
-  
+v = response.json()
+
+for c in v ["results"]:
+    print(c["trackName"]) 
+    print(c["artistName"])
+    print(c["collectionName"])
