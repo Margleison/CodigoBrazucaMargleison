@@ -1,0 +1,10 @@
+arquivo = open("Seletor python.txt", "r")
+for linha in arquivo:
+    print(linha)
+    conteudo = arquivo.readlines()
+    conteudo.append('Magrin:')
+    conteudo.append('pedro''Rodrigo')
+    arquivo = open('Seletor python.txt', 'w') 
+    arquivo.writelines(conteudo)
+    print(conteudo)
+arquivo.close()

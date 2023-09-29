@@ -157,3 +157,9 @@ test(*lista, *lista2, nome= "Rodrigo", idade= 21)
 
 
 # _ é como "nao toque nesta variavel"
+
+
+#Seletor de aluno
+# 1) Escreva um progrma que permita selecionar um aluno aleatorio de um arquivo txt
+# 2) Permita que o programa adicione um aluno a lista 
+# 3) Permita que o programa remova um aluno da lista
